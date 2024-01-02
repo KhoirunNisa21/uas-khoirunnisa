@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List</title>
+    <style>
+       
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        
+        .add-button {
+            display: block;
+            width: 100px;
+            margin: 10px auto;
+            padding: 8px 12px;
+            text-align: center;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .add-button:hover {
+            background-color: #45a049;
+        }
+
+        /* CSS untuk form */
+        .task-form {
+            text-align: center;
+        }
+
+        .task-form input[type="text"] {
+            padding: 8px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .task-form button[type="submit"] {
+            padding: 8px 12px;
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .task-form button[type="submit"]:hover {
+            background-color: #005f6b;
+        }
+    </style>
+</head>
+<body>
+    <h1>To-Do List</h1>
+
+    <button class="add-button">Add Task</button>
+
+    <form class="task-form" method="POST" action="/add-task">
+        <input type="text" name="task_title" placeholder="Enter task...">
+        <button type="submit">Add</button>
+    </form>
+
+    <ul>
+        <li>
+            <input type="checkbox" id="literasi digital">
+            <label for="literasi digital">literasi digital</label>
+        </li>
+        <li>
+            <input type="checkbox" id="WEB PROGRAMING" checked>
+            <label for="web programing">web programing(selesai)</label>
+        </li>
+        <ul>
+    </ul>
+      <li>
+          <input type="checkbox" id="PBO">
+          <label for="PBO">PBO</label>
+      </li>
+      <li>
+          <input type="checkbox" id="BAHASA INGGRIS" checked>
+          <label for="BAHASA INGGRIS">BAHASA INGGRIS(Completed)</label>
+      </li>
+  </ul>
+</body>
+</html>
+
+      
